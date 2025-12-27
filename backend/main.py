@@ -14,14 +14,8 @@ app.mount("/static", StaticFiles(directory="frontend"),name="static")
 @app.get("/", response_class = HTMLResponse)
 def home():
     return """
-    <html>
-        <head>
-            <title>AI Powered Voice Transcriber</title>
-        </head>
-        <body style="font-family:Georgia; padding:20px; max-width:800px; margin:auto">
-            <h1>🎤 Voice Transcriber Backend is Running!</h1>
-            <p>All is good </p>
-            <p>server is running at <code>http://localhost:8000</code></p>
-        </body>
-    </html>
+    <meta http-equiv="refresh" content ="0; url=/static/index.html">
+    <p> Redirecting to app ... 
+        <a href = "/static/index.html"> Click here if not redirected </a>
+    </p>
     """
