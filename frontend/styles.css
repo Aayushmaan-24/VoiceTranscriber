@@ -8,16 +8,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: cornsilk;
+    color: rgb(4, 58, 52);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    font-size: 35px;
 }
 h1{
     color: #2c3e50;
     display: block;
+}
+p{
+    font-size: 25px;
 }
 button {
     display: inline-block;
@@ -44,6 +49,17 @@ button {
 #stopbtn:hover{
     background-color: rgb(49, 49, 49);
 }
+
+#transcribebtn{
+    background-color: #9198e5;
+    color: white;
+}
+
+#transcribebtn:hover{
+    background-color: #b0b5e2;
+    cursor: pointer;
+}
+
 .recording {
     color: greenyellow; 
     font-weight: bold;
@@ -59,4 +75,14 @@ button {
     margin: 20px 0;
     width: 100%;
     max-width: 500px;
+}
+
+#transcript{
+    margin: 40px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 15px;
+    font-size: 20px;
+    white-space: pre-wrap;
+    display: none;
 }
