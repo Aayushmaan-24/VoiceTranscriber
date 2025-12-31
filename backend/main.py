@@ -54,7 +54,7 @@ Raw transcript :
 
 Clean transcript:
 """
-        response = ollama.generate(model = 'llama3.2:3b', prompt = prompt)
+        response = ollama.generate(model = 'gemma2:2b', prompt = prompt)
         clean_transcript = response['response'].strip()
         
         # clean the temp file
